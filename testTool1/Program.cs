@@ -57,8 +57,8 @@ namespace testTool1
 
                     if (workBook.TryGetWorksheet(outSheetName, out outputSheet) == false)
                     {
-                        // 出力用シートがなければ二番目に作成する
-                        workBook.AddWorksheet(outSheetName, 2);
+                        // 出力用シートがなければ末尾に作成する
+                        workBook.AddWorksheet(outSheetName);
                     }
                     outputSheet = workBook.Worksheet(outSheetName);                     // 結果出力用のワークシート
 
@@ -116,7 +116,10 @@ namespace testTool1
                         c++;
                     }
 
-
+                    /***
+                    * Bookを保存する
+                    * 現状では上書き保存の予定
+                    ***/
                     workBook.Save();
 
                     Console.WriteLine("処理終了のお知らせ");
