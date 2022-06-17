@@ -3,19 +3,20 @@ using System.IO;
 using ClosedXML.Excel;
 using ClosedXML.Excel.CalcEngine.Exceptions;
 
-// エクセルの表示・非表示、また起動・停止を司る
-namespace testTool1 
+namespace testTool1
 {
     class Program
     {
 
-
+        /***
+        *エクセルの表示・非表示、また起動・停止を司る
+        ***/
         static void Main(string[] args)
         {
             ValueGetter valueGetter = new ValueGetter();    // Excelブック内のデータを取得するインスタンス
-            Collating   collating   = new Collating();      // 突合処理を行うインスタンス
+            Collating collating = new Collating();      // 突合処理を行うインスタンス
 
-            
+
             // テスト用
             //string filePath = @"C:\Users\teramoto.yuki\Documents\コンソールアプリのドキュメント\標的.xlsx";
             //string targetSheetName = "検索対象";
