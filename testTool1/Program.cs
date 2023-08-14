@@ -18,7 +18,7 @@ namespace testTool1
 
 
             // テスト用
-            //string filePath = @"C:\Users\teramoto.yuki\Documents\コンソールアプリのドキュメント\標的.xlsx";
+            //string filePath = @"C:\Users\XXXXX\Documents\コンソールアプリのドキュメント\標的.xlsx";
             //string targetSheetName = "検索対象";
             //string outSheetName = "出力結果";
 
